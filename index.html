@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduCheck</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/html5-qrcode@2.3.9/html5-qrcode.min.js"></script>
+</head>
+<body>
+  <div class="content">
+    <div class="circle">
+      <img src= "imagenes/imagen.png" alt="Personajes" class="characters" />
+    </div>
+    <div class="text">
+      Únete a <strong>educheck</strong> para verificar tus estudios
+    </div>
+  </div>
+
+  <div class="button-panel">
+    <button class="qr-button" onclick="startQRScanner()">Escanear código QR</button>
+  </div>
+
+  <div id="qr-reader"></div>
+
+  <div class="dots">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot active"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
